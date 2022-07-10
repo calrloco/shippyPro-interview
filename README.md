@@ -33,7 +33,7 @@ la logica del componente si trova: /app/Http/Livewire/SearchFlight.php
 <br>
 la view si trova: /resources/views/livewire/search-flight.blade.php
 
-Per info su livewire: ['Livewire docs']('https://laravel-livewire.com/docs/2.x/quickstart')
+Per info su livewire: <a href="https://laravel-livewire.com/docs/2.x/quickstart">Livewire docs</a>
  
 
 
