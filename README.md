@@ -1,7 +1,6 @@
 # ESERCIZIO SHIPPY PRO 
 
 
-####Per avviare il progetto:
 installare dependencies:
 ```shell
 composer install && npm install
