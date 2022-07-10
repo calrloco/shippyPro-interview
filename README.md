@@ -15,7 +15,7 @@ avviare il progetto:
 ```shell
 php artisan serve
 ```
-build frontend assets development:
+build frontend assets:
 ```shell
 npm run build 
 ```
