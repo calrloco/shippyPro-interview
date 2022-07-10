@@ -10,7 +10,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
 </head>
-<body class="bg-gradient-to-r from-sky-500 to-indigo-500">
+<body class="bg-gradient-to-r from-green-200 via-green-300 to-blue-500">
 <div class="px-4 sm:px-6 lg:px-8 py-10">
     <div class="flex justify-center">
         <livewire:search-flight/>

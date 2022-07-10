@@ -1,4 +1,4 @@
-<div class="class flex flex-col items-center justify-end shadow-lg rounded lg:w-1/2 w-full">
+<div class="class flex flex-col items-center justify-end shadow-lg rounded-xl lg:w-1/2 w-full">
     <div class="w-full flex justify-center flex-col items-center bg-slate-100 shadow rounded-t-xl py-5">
         <div class="flex w-full px-8">
             <div class="lg:w-1/3 w-full">
@@ -45,7 +45,7 @@
             </div>
         </div>
     </div>
-    <div class="w-full min-h-[310px] bg-white rounded-b-xl">
+    <div class="w-full min-h-[310px] rounded-b-xl  bg-white">
         <div class="flex h-full justify-center items-center text-slate-400">
             @if(!$flight)
                 <div
