@@ -13,9 +13,7 @@ build frontend assets:
 ```shell
 npm run build 
 ```
-
 avviare il progetto:
-
 ```shell
 php artisan serve
 ```
