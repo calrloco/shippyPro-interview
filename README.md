@@ -5,24 +5,22 @@ installare dependencies:
 ```shell
 composer install && npm install
 ````
-### Per popolare il database:
+popolare il database:
 ```shell
 php artisan migrate && php artisan db:seed 
 ```
 
-### Per avviare il progetto:
+avviare il progetto:
 
 ```shell
 php artisan serve
 ```
-### build frontend assets development:
+build frontend assets development:
 ```shell
 npm run dev 
 ```
-### build frontend assets production:
-```shell
-npm run build 
-```
+build frontend assets production:
+
 
 
 ## COME È COMPOSTO IL PROGETTO
