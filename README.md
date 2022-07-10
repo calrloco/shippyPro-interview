@@ -17,9 +17,8 @@ php artisan serve
 ```
 build frontend assets development:
 ```shell
-npm run dev 
+npm run build 
 ```
-build frontend assets production:
 
 
 
