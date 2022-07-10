@@ -18,7 +18,7 @@ class FlightCard extends Component
      *
      * @return void
      */
-    public function __construct($flight,$hidden = false,$message = 'Best price!')
+    public function __construct($flight,$hidden = false,$message = 'Best deal:')
     {
         $this->hidden = $hidden;
         $this->flight = $flight;

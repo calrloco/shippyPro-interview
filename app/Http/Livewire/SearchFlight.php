@@ -28,7 +28,7 @@ class SearchFlight extends Component
         $this->from = $this->airports->first()->code;
         $this->to = $this->airports->last()->code;
         $this->stopOvers = 2;
-        $this->checkCheaper();
+        $this->findCheaperFlight();
     }
 
     public function swap()
@@ -36,32 +36,31 @@ class SearchFlight extends Component
         $from = $this->from;
         $this->from = $this->to;
         $this->to = $from;
-        $this->checkCheaper();
+        $this->findCheaperFlight();
     }
 
     public function decrementStopOvers(){
         if($this->stopOvers > 0){
             $this->stopOvers--;
         }
-        $this->checkCheaper();
+        $this->findCheaperFlight();
     }
 
     public function incrementStopOvers(){
         if($this->stopOvers < $this->maxStopOvers){
             $this->stopOvers++;
         }
-        $this->checkCheaper();
+        $this->findCheaperFlight();
     }
 
-    public function checkCheaper() {
+    public function findCheaperFlight() {
 
         /* Creating an array of airports and setting the price to the maximum integer value. */
         $flights = Flight::get();
-        $airports = Airport::get();
 
         $options = [];
 
-        foreach ($airports as $airport) {
+        foreach ($this->airports as $airport) {
             $options[$airport->code] = [
                 'price' => PHP_INT_MAX,
                 'connections' => 0,
@@ -81,11 +80,11 @@ class SearchFlight extends Component
                 $destination = $flight->code_arrival;
                 $price = $flight->price;
 
+                /* Checking if the price of the flight is less than the price of the destination. If it is, it sets the
+                price of the destination to the price of the flight. */
                 if ($options[$source]['price'] + $price < $optionsCopy[$destination]['price']) {
                     $optionsCopy[$destination]['price'] = $options[$source]['price'] + $price;
-                    if($flight->code_departure) {
-                        $optionsCopy[$destination]['connections'] = $i;
-                    }
+                    $optionsCopy[$destination]['connections'] = $i;
                 }
             }
             $options = $optionsCopy;
@@ -101,7 +100,7 @@ class SearchFlight extends Component
 
 
     public function updated(){
-        $this->checkCheaper();
+        $this->findCheaperFlight();
     }
 
 

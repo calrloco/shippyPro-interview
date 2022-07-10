@@ -54,7 +54,7 @@
                     <p class="text-xs font-light text-slate-500">try with a different filter</p>
                 </div>
             @endif
-            <x-flight-card message="overall best price" :flight="$flight"></x-flight-card>
+            <x-flight-card :flight="$flight"></x-flight-card>
         </div>
     </div>
 </div>
