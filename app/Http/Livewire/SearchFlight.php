@@ -21,6 +21,7 @@ class SearchFlight extends Component
      */
     public mixed $flight;
 
+
     public function mount()
     {
         $this->airports = Airport::get();
@@ -53,9 +54,8 @@ class SearchFlight extends Component
     }
 
     public function checkCheaper() {
+
         /* Creating an array of airports and setting the price to the maximum integer value. */
-        /* Creating an array of airports and setting the price to the maximum integer value. */
-        /*  */
         $flights = Flight::get();
         $airports = Airport::get();
 
@@ -91,6 +91,8 @@ class SearchFlight extends Component
             $options = $optionsCopy;
         }
 
+        /* Checking if the price is not the maximum integer value, if it is not, it returns the price, if it is, it returns
+        null. */
         $this->flight = $options[$this->to]['price'] !== PHP_INT_MAX ?  $options[$this->to] : null;
     }
 
