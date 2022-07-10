@@ -9,16 +9,17 @@ popolare il database:
 ```shell
 php artisan migrate && php artisan db:seed 
 ```
+build frontend assets:
+```shell
+npm run build 
+```
 
 avviare il progetto:
 
 ```shell
 php artisan serve
 ```
-build frontend assets:
-```shell
-npm run build 
-```
+
 
 
 
