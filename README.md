@@ -23,7 +23,6 @@ avviare il progetto:
 ```shell
 php artisan serve
 ```
-torverete il progetto sulla porta 8090:
 http://127.0.0.1:8000/
 
 ## Installazione con docker:
@@ -43,8 +42,6 @@ build frontend assets:
 ```shell
 ./vendor/bin/sail npm run build 
 ```
-
-torverete il progetto sulla porta 8090:
 http://localhost:8090
 
 
