@@ -1,6 +1,6 @@
 <div class="class flex flex-col items-center justify-end shadow-lg rounded-xl lg:w-1/2 w-full">
     <div class="w-full flex justify-center flex-col items-center bg-slate-100 shadow rounded-t-xl py-5">
-        <div class="flex w-full px-8">
+        <div class="flex flex-col md:flex-row w-full px-8">
             <div class="lg:w-1/3 w-full">
                 <label for="from" class="block text-sm font-medium text-gray-700">From</label>
                 <select wire:model="from" id="from" name="from"
@@ -12,7 +12,7 @@
                     @endforeach
                 </select>
             </div>
-            <button class="h-full justify-center items-end flex px-2">
+            <button class="h-full justify-center items-end flex md:px-2 md:py-0  px-0 py-2">
                 <span
                     class="flex  justify-center items-center hover:text-slate-600 text-slate-400 rounded bg-white hover:bg-slate-200 max-h-[38px] shadow px-2">
                    <x-gmdi-swap-horiz wire:click="swap" class="h-10 w-10"/>
