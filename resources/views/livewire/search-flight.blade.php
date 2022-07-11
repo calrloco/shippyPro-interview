@@ -29,7 +29,7 @@
                     @endforeach
                 </select>
             </div>
-            <div class="lg:w-1/3 w-full pl-3 text-slate-400 max-w-[160px]">
+            <div class="lg:w-1/3 w-full lg:pl-3 pl-0 pt-3 md:pt-0 text-slate-400 max-w-[160px]">
                 <label for="from" class="block text-sm text-gray-700 mb-1">Max stopovers</label>
                 <div class="w-full justify-between flex h-[38px] border-slate-200">
                     <button wire:click="decrementStopOvers"
