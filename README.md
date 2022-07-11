@@ -51,8 +51,9 @@ SearchFlight
 la logica del componente si trova: /app/Http/Livewire/SearchFlight.php
 <br>
 la view si trova: /resources/views/livewire/search-flight.blade.php
-Per info su Livewire: <a target="_blank" href="https://laravel-livewire.com/docs/2.x/quickstart">Livewire docs</a>
 <br>
+Per info su Livewire: <a target="_blank" href="https://laravel-livewire.com/docs/2.x/quickstart">Livewire docs</a>
+
 
 
 

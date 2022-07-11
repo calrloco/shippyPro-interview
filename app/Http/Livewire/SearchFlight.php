@@ -96,10 +96,6 @@ class SearchFlight extends Component
         $this->flight = $options[$this->to]['price'] !== PHP_INT_MAX ?  $options[$this->to] : null;
     }
 
-
-
-
-
     public function updated(){
         $this->findCheaperFlight();
     }
