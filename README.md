@@ -4,7 +4,7 @@ creare file env
 copiare docker.env.example se usate docker
 altrimenti potete copiare .env.example
 
-Il progetto può essere avviato con [docker](#Installazione-con-docker) o senza:
+Il progetto può essere avviato con docker o senza:
 
 ## avvia senza docker:
 installare dependencies:
@@ -51,7 +51,7 @@ SearchFlight
 la logica del componente si trova: /app/Http/Livewire/SearchFlight.php
 <br>
 la view si trova: /resources/views/livewire/search-flight.blade.php
-Per info su Livewire: <a href="https://laravel-livewire.com/docs/2.x/quickstart">Livewire docs</a>
+Per info su Livewire: <a target="_blank" href="https://laravel-livewire.com/docs/2.x/quickstart">Livewire docs</a>
 <br>
 
 
