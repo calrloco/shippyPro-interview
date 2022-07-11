@@ -6,7 +6,7 @@ altrimenti potete copiare .env.example
 
 Il progetto può essere avviato con docker o senza:
 
-## avvia senza docker:
+## setup senza docker:
 installare dependencies:
 ```shell
 composer install && npm install
@@ -25,7 +25,7 @@ php artisan serve
 ```
 http://127.0.0.1:8000/
 
-### avvia con docker:
+### setup con docker:
 Start container:
 ```shell
 ./vendor/bin/sail up 
