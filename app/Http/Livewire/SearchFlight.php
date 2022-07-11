@@ -89,7 +89,6 @@ class SearchFlight extends Component
             }
             $options = $optionsCopy;
         }
-
         /* Checking if the price is not the maximum integer value, if it is not, it returns the price, if it is, it returns
         null. */
         $this->flight = $options[$this->to]['price'] !== PHP_INT_MAX ?  $options[$this->to] : null;
