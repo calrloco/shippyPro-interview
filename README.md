@@ -23,6 +23,7 @@ avviare il progetto:
 ```shell
 php artisan serve
 ```
+you can find th project at:
 http://127.0.0.1:8000/
 
 ## Installazione con docker:
@@ -51,9 +52,11 @@ SearchFlight
 la logica del componente si trova: /app/Http/Livewire/SearchFlight.php
 <br>
 la view si trova: /resources/views/livewire/search-flight.blade.php
-
 Per info su Livewire: <a href="https://laravel-livewire.com/docs/2.x/quickstart">Livewire docs</a>
- 
+<br>
+
+
+
 
 
 
