@@ -53,7 +53,8 @@ class SearchFlight extends Component
         $this->findCheaperFlight();
     }
 
-    public function findCheaperFlight() {
+    public function findCheaperFlight(): void
+    {
 
         /* Creating an array of airports and setting the price to the maximum integer value. */
         $flights = Flight::get();
@@ -75,6 +76,7 @@ class SearchFlight extends Component
         /* Finding the cheapest flight from the source to the destination. */
         for ($i = 0; $i < ($this->stopOvers +1); $i++) {
             $optionsCopy = $options;
+
             foreach ($flights as $flight) {
                 $source = $flight->code_departure;
                 $destination = $flight->code_arrival;
