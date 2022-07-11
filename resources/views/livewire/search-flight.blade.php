@@ -36,8 +36,7 @@
                             class="flex-1 hover:text-slate-600 text-slate-400   shadow justify-center hover:bg-slate-200 items-center border-r border-r-white rounded-l flex bg-white font-black cursor-pointer">
                         -
                     </button>
-                    <div
-                        class="h-full px-5 shadow justify-center items-center bg-white flex font-medium min-w-[60px]">{{$stopOvers}}</div>
+                    <div class="h-full px-5 shadow justify-center items-center bg-white flex font-medium min-w-[60px]">{{$stopOvers}}</div>
                     <button wire:click="incrementStopOvers"
                             class="flex-1 hover:text-slate-600 text-slate-400 shadow justify-center hover:bg-slate-200 rounded-r border-l border-l-white items-center flex bg-white font-black cursor-pointer">
                         +
