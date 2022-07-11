@@ -1,5 +1,5 @@
 # ESERCIZIO VOLI 
-###prima di iniziare
+### prima di iniziare
 creare file env 
 copiare docker.env.example se usate docker
 altrimenti potete copiare .env.example
