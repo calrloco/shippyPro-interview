@@ -6,7 +6,7 @@ altrimenti potete copiare .env.example
 
 Il progetto può essere avviato con docker o senza:
 
-## setup senza docker:
+### setup senza docker:
 installare dependencies:
 ```shell
 composer install && npm install
