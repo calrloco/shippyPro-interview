@@ -32,13 +32,11 @@
             <div class="lg:w-1/3 w-full lg:pl-3 pl-0 pt-3 md:pt-0 text-slate-400 max-w-[160px]">
                 <label for="from" class="block text-sm text-gray-700 mb-1">Max stopovers</label>
                 <div class="w-full justify-between flex h-[38px] border-slate-200">
-                    <button wire:click="decrementStopOvers"
-                            class="flex-1 hover:text-slate-600 text-slate-400   shadow justify-center hover:bg-slate-200 items-center border-r border-r-white rounded-l flex bg-white font-black cursor-pointer">
+                    <button wire:click="decrementStopOvers" class="flex-1 hover:text-slate-600 text-slate-400   shadow justify-center hover:bg-slate-200 items-center border-r border-r-white rounded-l flex bg-white font-black cursor-pointer">
                         -
                     </button>
                     <div class="h-full px-5 shadow justify-center items-center bg-white flex font-medium min-w-[60px]">{{$stopOvers}}</div>
-                    <button wire:click="incrementStopOvers"
-                            class="flex-1 hover:text-slate-600 text-slate-400 shadow justify-center hover:bg-slate-200 rounded-r border-l border-l-white items-center flex bg-white font-black cursor-pointer">
+                    <button wire:click="incrementStopOvers" class="flex-1 hover:text-slate-600 text-slate-400 shadow justify-center hover:bg-slate-200 rounded-r border-l border-l-white items-center flex bg-white font-black cursor-pointer">
                         +
                     </button>
                 </div>
