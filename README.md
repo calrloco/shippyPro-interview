@@ -4,9 +4,9 @@ creare file env
 copiare docker.env.example se usate docker
 altrimenti potete copiare .env.example
 
-Il progetto può essere avviato con docker o senza come prefrite:
+Il progetto può essere avviato con [docker](#Installazione-con-docker) o senza:
 
-## Installazione senza docker:
+## avvia senza docker:
 installare dependencies:
 ```shell
 composer install && npm install
@@ -23,10 +23,9 @@ avviare il progetto:
 ```shell
 php artisan serve
 ```
-you can find th project at:
 http://127.0.0.1:8000/
 
-## Installazione con docker:
+### avvia con docker:
 Start container:
 ```shell
 ./vendor/bin/sail up 
