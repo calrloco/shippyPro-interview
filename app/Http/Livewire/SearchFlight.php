@@ -61,12 +61,12 @@ class SearchFlight extends Component
 
         $options = [];
 
-        foreach ($this->airports as $airport) {
+        $this->airports->each(function ($airport) use (&$options){
             $options[$airport->code] = [
                 'price' => PHP_INT_MAX,
                 'connections' => 0,
             ];
-        }
+        });
 
         $options[$this->from] = [
             'price' =>  0,
@@ -74,10 +74,11 @@ class SearchFlight extends Component
         ];
 
         /* Finding the cheapest flight from the source to the destination. */
-        for ($i = 0; $i < ($this->stopOvers +1); $i++) {
+        for ($i = 0; $i < ($this->stopOvers + 1); $i++) {
+
             $optionsCopy = $options;
 
-            foreach ($flights as $flight) {
+            $flights->each(function ($flight) use (&$optionsCopy,$options,$i){
                 $source = $flight->code_departure;
                 $destination = $flight->code_arrival;
                 $price = $flight->price;
@@ -88,7 +89,7 @@ class SearchFlight extends Component
                     $optionsCopy[$destination]['price'] = $options[$source]['price'] + $price;
                     $optionsCopy[$destination]['connections'] = $i;
                 }
-            }
+            });
             $options = $optionsCopy;
         }
         /* Checking if the price is not the maximum integer value, if it is not, it returns the price, if it is, it returns
