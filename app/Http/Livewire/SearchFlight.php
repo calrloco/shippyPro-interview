@@ -58,20 +58,18 @@ class SearchFlight extends Component
     public function findCheaperFlight(): void
     {
 
-        /* Creating an array of airports and setting the price to the maximum integer value. */
+
+        /* Creating an array of all the airports and setting the price of the source airport to 0 and the price of all the
+        other airports to the maximum integer value. */
         $options = [];
 
         $this->airports->each(function ($airport) use (&$options){
             $options[$airport->code] = [
-                'price' => PHP_INT_MAX,
+                'price' => $airport->code === $this->from ? 0 : PHP_INT_MAX,
                 'connections' => 0,
             ];
         });
 
-        $options[$this->from] = [
-            'price' =>  0,
-            'connections' => 0,
-        ];
 
         /* Finding the cheapest flight from the source to the destination. */
         for ($i = 0; $i < ($this->stopOvers + 1); $i++) {
