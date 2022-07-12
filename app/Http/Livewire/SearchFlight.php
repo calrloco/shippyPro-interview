@@ -57,8 +57,6 @@ class SearchFlight extends Component
 
     public function findCheaperFlight(): void
     {
-
-
         /* Creating an array of all the airports and setting the price of the source airport to 0 and the price of all the
         other airports to the maximum integer value. */
         $options = [];
