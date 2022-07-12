@@ -12,6 +12,7 @@ class SearchFlight extends Component
     public $from;
     public $to;
     public $stopOvers;
+    public $flights;
     private $maxStopOvers = 2;
 
 
@@ -25,6 +26,7 @@ class SearchFlight extends Component
     public function mount()
     {
         $this->airports = Airport::get();
+        $this->flights = Flight::get();
         $this->from = $this->airports->first()->code;
         $this->to = $this->airports->last()->code;
         $this->stopOvers = 2;
@@ -57,8 +59,6 @@ class SearchFlight extends Component
     {
 
         /* Creating an array of airports and setting the price to the maximum integer value. */
-        $flights = Flight::get();
-
         $options = [];
 
         $this->airports->each(function ($airport) use (&$options){
@@ -78,7 +78,7 @@ class SearchFlight extends Component
 
             $optionsCopy = $options;
 
-            $flights->each(function ($flight) use (&$optionsCopy,$options,$i){
+            $this->flights->each(function ($flight) use (&$optionsCopy,$options,$i){
                 $source = $flight->code_departure;
                 $destination = $flight->code_arrival;
                 $price = $flight->price;
